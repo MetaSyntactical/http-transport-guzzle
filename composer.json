@@ -1,0 +1,28 @@
+{
+  "name": "metasyntactical/http-transport-guzzle",
+  "description": "Implementation of a HTTP Transport layer based on guzzle",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Daniel Kreuer",
+      "email": "d.kreuer@danielkreuer.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "metasyntactical/http-transport": "^1.0",
+    "guzzlehttp/guzzle": "^6.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.7"
+  },
+  "provides": {
+    "metasyntactical/http-transport-implementation": "1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "MetaSyntactical\\Http\\Transport\\Guzzle\\": "src/"
+    }
+  }
+}
